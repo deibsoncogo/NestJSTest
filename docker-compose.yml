@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    container_name: TempNestJSTest
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=TempNestJSTest
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=TempNestJSTestDB

@@ -1,0 +1,42 @@
+{
+  "rules": {
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-empty-function": ["error", { "allow": ["constructors"] }],
+    "no-useless-constructor": "off",
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "import/prefer-default-export": "off",
+    "max-len": ["error", { "code": 90, "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreComments": true, "ignorePattern": "import.+from.+" }],
+    "linebreak-style": ["error", "unix"],
+    "no-console": "off",
+    "quotes": ["error", "single"],
+    "object-curly-newline": ["error", { "consistent": true, "multiline": true, "minProperties": 15 }],
+    "import-helpers/order-imports": ["warn", { "groups": [["/^@fastify/", "/^nest/", "/^adonis/", "/^express/", "/^typeorm/", "/^prisma/"], "module", ["parent", "sibling", "index"], ["/style/", "/css/"], "/^@//"], "newlinesBetween": "never", "alphabetize": { "order": "asc", "ignoreCase": true }}],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "import/extensions": ["error", "ignorePackages", { "ts": "never" }]
+  },
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers"
+  ],
+  "settings": {
+    "import/resolver": { "typescript": {} }
+  }
+}
