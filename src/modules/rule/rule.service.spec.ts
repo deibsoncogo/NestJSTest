@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { Rule } from '@prisma/client'
-import { DatabaseService } from '../database/database.service'
+import { DatabaseService } from '../../database/database.service'
 import { CreateRuleDto } from './rule.dto'
 import { RuleService } from './rule.service'
 

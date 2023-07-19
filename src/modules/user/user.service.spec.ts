@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { User } from '@prisma/client'
-import { DatabaseService } from '../database/database.service'
+import { DatabaseService } from '../../database/database.service'
 import { CreateUserDto } from './user.dto'
 import { UserService } from './user.service'
 

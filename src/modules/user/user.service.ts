@@ -1,6 +1,6 @@
 import { Injectable, NotAcceptableException } from '@nestjs/common'
 import { User } from '@prisma/client'
-import { DatabaseService } from '../database/database.service'
+import { DatabaseService } from '../../database/database.service'
 import { CreateUserDto } from './user.dto'
 
 @Injectable()

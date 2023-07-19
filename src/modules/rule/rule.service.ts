@@ -1,6 +1,6 @@
 import { Injectable, NotAcceptableException } from '@nestjs/common'
 import { Rule } from '@prisma/client'
-import { DatabaseService } from '../database/database.service'
+import { DatabaseService } from '../../database/database.service'
 import { CreateRuleDto } from './rule.dto'
 
 @Injectable()
