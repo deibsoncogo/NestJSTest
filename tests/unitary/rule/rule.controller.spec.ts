@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { Rule } from '@prisma/client'
-import { RuleController } from './rule.controller'
-import { CreateRuleDto } from './rule.dto'
-import { RuleService } from './rule.service'
+import { RuleController } from '../../../src/modules/rule/rule.controller'
+import { CreateRuleDto } from '../../../src/modules/rule/rule.dto'
+import { RuleService } from '../../../src/modules/rule/rule.service'
 
 const RulesMock: Rule[] = [{
   id: 'id-mock',

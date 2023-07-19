@@ -1,5 +1,5 @@
 import { validate } from 'class-validator'
-import { CreateUserDto } from './user.dto'
+import { CreateUserDto } from '../../../src/modules/user/user.dto'
 
 describe('UserDto', () => {
   describe('createUser', () => {

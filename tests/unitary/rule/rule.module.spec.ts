@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { RuleModule } from './rule.module'
+import { RuleModule } from '../../../src/modules/rule/rule.module'
 
 describe('RuleModule', () => {
   let ruleModule: RuleModule

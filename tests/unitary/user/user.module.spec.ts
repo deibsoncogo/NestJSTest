@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { UserModule } from './user.module'
+import { UserModule } from '../../../src/modules/user/user.module'
 
 describe('UserModule', () => {
   let userModule: UserModule

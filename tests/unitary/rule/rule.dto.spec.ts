@@ -1,5 +1,5 @@
 import { validate } from 'class-validator'
-import { CreateRuleDto } from './rule.dto'
+import { CreateRuleDto } from '../../../src/modules/rule/rule.dto'
 
 describe('RuleDto', () => {
   describe('createRule', () => {

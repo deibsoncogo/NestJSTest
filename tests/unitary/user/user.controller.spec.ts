@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { User } from '@prisma/client'
-import { UserController } from './user.controller'
-import { CreateUserDto } from './user.dto'
-import { UserService } from './user.service'
+import { UserController } from '../../../src/modules/user/user.controller'
+import { CreateUserDto } from '../../../src/modules/user/user.dto'
+import { UserService } from '../../../src/modules/user/user.service'
 
 const UsersMock: User[] = [{
   id: 'id-mock',
