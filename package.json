@@ -34,7 +34,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./tests/e2e/jest-e2e.json",
+    "test:e2e": "jest --config jest.e2e.config.ts",
+    "test:e2e:cov": "jest --coverage --config jest.e2e.config.ts",
     "lint": "eslint . --config .eslintrc.json --ext js,jsx,ts,tsx --fix"
   },
   "dependencies": {
