@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/12</span>
+                <span class='fraction'>12/12</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,37 +96,37 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Injectable, NotAcceptableException } from '@nestjs/common'
@@ -138,28 +138,28 @@ import { CreateRuleDto } from './rule.dto'
 export class RuleService {
   constructor(private readonly databaseService: DatabaseService) { }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>verifyDoubleRuleByData(data: Partial&lt;Rule&gt;): Promise&lt;void&gt; {
-    const rule = <span class="cstat-no" title="statement not covered" >await this.databaseService.rule.findFirst({ where: data })</span>
+  async verifyDoubleRuleByData(data: Partial&lt;Rule&gt;): Promise&lt;void&gt; {
+    const rule = await this.databaseService.rule.findFirst({ where: data })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (rule) <span class="cstat-no" title="statement not covered" >throw new NotAcceptableException({ message: 'Já existe este valor cadastrado', data })</span></span>
+    if (rule) throw new NotAcceptableException({ message: 'Já existe este valor cadastrado', data })
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>createRule(data: CreateRuleDto): Promise&lt;Rule&gt; {
-<span class="cstat-no" title="statement not covered" >    await this.verifyDoubleRuleByData({ name: data.name })</span>
+  async createRule(data: CreateRuleDto): Promise&lt;Rule&gt; {
+    await this.verifyDoubleRuleByData({ name: data.name })
 &nbsp;
-    const rule = <span class="cstat-no" title="statement not covered" >await this.databaseService.rule.create({ data })</span>
+    const rule = await this.databaseService.rule.create({ data })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return rule</span>
+    return rule
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>findRules(): Promise&lt;Rule[]&gt; {
-    const rules = <span class="cstat-no" title="statement not covered" >await this.databaseService.rule.findMany({ orderBy: { createdAt: 'desc' } })</span>
+  async findRules(): Promise&lt;Rule[]&gt; {
+    const rules = await this.databaseService.rule.findMany({ orderBy: { createdAt: 'desc' } })
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return rules</span>
+    return rules
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>deleteRules(): Promise&lt;void&gt; {
-<span class="cstat-no" title="statement not covered" >    await this.databaseService.rule.deleteMany()</span>
+  async deleteRules(): Promise&lt;void&gt; {
+    await this.databaseService.rule.deleteMany()
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -169,7 +169,7 @@ export class RuleService {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-20T22:36:43.059Z
+                at 2023-07-20T23:29:36.585Z
             </div>
         <script src="../prettify.js"></script>
         <script>
