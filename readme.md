@@ -1,13 +1,16 @@
 # Nest JS - Testes automatizado
 Projeto criado para demonstrar a utilização de testes automatizado com o `Nest JS`, `Jest` e o `Supertest`
 
-#nestjs #jest #supertest #mock #dockercompose #prisma #postgresql #typescript
+#nestjs #jest #supertest # #dockercompose #prisma #sqlite #typescript
 
-## Execução dos testes
-Estes são os atalhos configurado para facilitar sua execução
+## Execuções
+Primeiro instale as dependências com o seguinte comando
+```bash
+npm i
+```
 
 ### Testes unitários
-Para executar todos os testes unitário
+Para executar todos os testes unitário utilize este atalho
 ```bash
 npm run test
 ```
@@ -18,7 +21,12 @@ npm run test:cov
 ```
 
 ### Testes e2e
-Para executar todos os testes e2e
+Primeiro precisamos criar as migrations com o `Prisma` utilizando o seguinte comando
+```bash
+npx prisma migrate dev
+```
+
+Para executar todos os testes e2e utilize este atalho
 ```bash
 npm run test:e2e
 ```
@@ -26,14 +34,6 @@ npm run test:e2e
 Para criar o `coverage` dos testes e2e mostrando a cobertura dos testes
 ```bash
 npm run test:e2e:cov
-```
-
-* É necessário a execução do bando de dados
-
-## Banco de dados
-Agora criar as migrations com o `Prisma` utilizando o seguinte comando
-```bash
-npx prisma migrate dev
 ```
 
 ## Execução da aplicação
