@@ -31,11 +31,6 @@ npm run test:e2e:cov
 * É necessário a execução do bando de dados
 
 ## Banco de dados
-Primeiro precisamos criar um container com o `Docker` utilizando o seguinte comando
-```bash
-docker-compose up -d
-```
-
 Agora criar as migrations com o `Prisma` utilizando o seguinte comando
 ```bash
 npx prisma migrate dev
