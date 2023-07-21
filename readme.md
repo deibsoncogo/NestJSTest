@@ -1,8 +1,6 @@
 # Nest JS - Testes automatizado
 Projeto criado para demonstrar a utilização de testes automatizado com o `Nest JS`, `Jest` e o `Supertest`
 
-#nestjs #jest #supertest # #dockercompose #prisma #sqlite #typescript
-
 ## Execuções
 Primeiro instale as dependências com o seguinte comando
 ```bash
